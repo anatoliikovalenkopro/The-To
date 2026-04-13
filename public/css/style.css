@@ -1,0 +1,192 @@
+/* BODY */
+body {
+  font-family: Verdana, Arial;
+  color: white;
+  background: url("../img/background.png") no-repeat top center;
+  background-size: cover;
+}
+
+/* NAV */
+.nav {
+  background: linear-gradient(#ff66aa, #000);
+  padding: 10px;
+}
+
+.nav-inner {
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links a {
+  color: #ff99cc;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+/* LAYOUT */
+.container {
+  width: 1000px;
+  margin: 20px auto;
+  display: flex;
+  gap: 15px;
+}
+
+.sidebar {
+  width: 250px;
+}
+
+.content {
+  flex: 1;
+}
+
+/* PANELS */
+.panel {
+  background: rgba(0,0,0,0.6);
+  border: 2px solid #ff66aa;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+/* BUTTONS */
+.btn {
+  display: block;
+  border: 2px solid #ff66aa;
+  padding: 6px;
+  margin: 5px 0;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.btn:hover {
+  background: #ff66aa;
+  color: black;
+}
+
+/* VIDEOS */
+.videos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.video {
+  cursor: pointer;
+}
+
+.video img {
+  width: 100%;
+  border: 2px solid #ff66aa;
+}
+
+/* SHOW MORE */
+.hidden-video {
+  display: none;
+}
+
+button {
+  margin-top: 10px;
+  padding: 6px;
+  background: black;
+  color: white;
+  border: 2px solid #ff66aa;
+  cursor: pointer;
+}
+
+/* ALBUMS */
+.album-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.album {
+  border: 2px dashed #ff66aa;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.album:hover {
+  background: #ff66aa;
+  color: black;
+}
+
+/* 🔥 MODAL FIXED */
+.modal {
+  display: none; /* IMPORTANT */
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+
+  justify-content: center;
+  align-items: center;
+}
+
+/* MODAL BOX */
+.modal-box {
+  background: #0b0b0b;
+  border: 2px solid #ff66aa;
+  padding: 25px;
+
+  width: 400px;
+  max-width: 90%;
+
+  text-align: center;
+
+  box-shadow: 0 0 25px #ff66aa;
+  animation: pop 0.2s ease;
+}
+
+/* TITLE */
+#albumTitle {
+  margin-bottom: 15px;
+  color: #ff99cc;
+}
+
+/* LINKS */
+#albumLinks a {
+  display: block;
+  margin: 6px 0;
+  padding: 6px;
+
+  border: 1px solid #ff66aa;
+  color: white;
+  text-decoration: none;
+}
+
+#albumLinks a:hover {
+  background: #ff66aa;
+  color: black;
+}
+
+/* CLOSE BUTTON */
+.modal-box button {
+  margin-bottom: 10px;
+  padding: 5px 10px;
+
+  border: 1px solid #ff66aa;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.modal-box button:hover {
+  background: #ff66aa;
+  color: black;
+}
+
+/* ANIMATION */
+@keyframes pop {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

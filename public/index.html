@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>The To!</title>
+
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="nav">
+  <div class="nav-inner">
+    <div>The To!</div>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="videos.html">Videos</a>
+      <a href="music.html">Music</a>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+<div class="sidebar">
+
+<div class="panel">
+<h2>The To!</h2>
+<p> Since 2011</p>
+</div>
+
+<div class="panel">
+<h3>Contact</h3>
+<a href="https://www.instagram.com/magic_punk/" target="_blank" class="btn">Add Friend</a>
+<a href="https://www.instagram.com/magic_punk/" target="_blank" class="btn">Message</a>
+<a href="https://www.instagram.com/magic_punk/" target="_blank" class="btn">Follow</a>
+</div>
+
+<div class="panel">
+<h3>Follow Us</h3>
+<a href="https://www.youtube.com/@TheToooo" target="_blank" class="btn">YouTube</a>
+<a href="https://open.spotify.com/artist/3Qhl3gdrlZaXfzAObo41SK" target="_blank" class="btn">Spotify</a>
+<a href="https://soundcloud.com/thetoooo" target="_blank" class="btn">SoundCloud</a>
+<a href="https://thetoooo.bandcamp.com/" target="_blank" class="btn">Bandcamp</a>
+</div>
+
+<div class="panel">
+<h3>Interests</h3>
+<p>Your mom</p>
+<p>Movies: Jackass, Once Upon a Time in America</p>
+<p>Books: Hitchhiker's Guide to the Galaxy</p>
+<p>Music: MCR, Sum 41, The Beatles, Eminem</p>
+</div>
+
+</div>
+
+<div class="content">
+
+<div class="panel">
+<h3>Videos</h3>
+
+<div class="videos">
+
+<div class="video" onclick="openVideo('MKJjmx5E6RU')">
+<img src="https://img.youtube.com/vi/MKJjmx5E6RU/hqdefault.jpg">
+</div>
+
+<div class="video" onclick="openVideo('aJfPDZdXoms')">
+<img src="https://img.youtube.com/vi/aJfPDZdXoms/hqdefault.jpg">
+</div>
+
+<div class="video" onclick="openVideo('ZnKf1uWPujE')">
+<img src="https://img.youtube.com/vi/ZnKf1uWPujE/hqdefault.jpg">
+</div>
+
+<div class="video" onclick="openVideo('v7w_H5KXl54')">
+<img src="https://img.youtube.com/vi/v7w_H5KXl54/hqdefault.jpg">
+</div>
+
+<div class="video hidden-video" onclick="openVideo('yUNq2c2mWD8')">
+<img src="https://img.youtube.com/vi/yUNq2c2mWD8/hqdefault.jpg">
+</div>
+
+<div class="video hidden-video" onclick="openVideo('O8uhBS9eKG8')">
+<img src="https://img.youtube.com/vi/O8uhBS9eKG8/hqdefault.jpg">
+</div>
+
+</div>
+
+<button id="toggleBtn" onclick="toggleVideos()">Show More</button>
+
+</div>
+
+<div class="panel">
+<h3>Discography</h3>
+
+<div class="album-list">
+
+<div class="album" onclick="openAlbum('lucid2021')"><img src="img/Lucid_dream.jpg" width="200" height="200" alt="Lucid Dream">
+<p>Lucid Dream 2021</p>
+</div>
+
+<div class="album" onclick="openAlbum('ep2011')"><img src="img/1ep.jpg" width="200" height="200" alt ="1 Ep"> <p>I EP (Remastered) 2011</p>
+</div>
+
+<!-- TEMPLATE
+<div class="album" onclick="openAlbum('newAlbum')">
+Album Name
+</div>
+-->
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- VIDEO MODAL -->
+<div id="videoModal" class="modal">
+  <div class="modal-box">
+    <button onclick="closeVideo()">Close</button>
+    <iframe id="videoFrame"></iframe>
+  </div>
+</div>
+
+<!-- ALBUM MODAL -->
+<div id="albumModal" class="modal">
+  <div class="modal-box">
+    <button onclick="closeAlbum()">Close</button>
+    <h2 id="albumTitle"></h2>
+    <div id="albumLinks"></div>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

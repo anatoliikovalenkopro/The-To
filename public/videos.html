@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="nav">
+<div class="nav-inner">
+<div>The To!</div>
+<div class="links">
+<a href="index.html">Home</a>
+<a href="videos.html">Videos</a>
+<a href="music.html">Music</a>
+</div>
+</div>
+</div>
+
+<div class="container">
+<div class="content">
+
+<div class="panel">
+<h2>All Videos</h2>
+
+<div class="videos">
+
+<div class="video" onclick="openVideo('MKJjmx5E6RU')"><img src="https://img.youtube.com/vi/MKJjmx5E6RU/hqdefault.jpg"></div>
+<div class="video" onclick="openVideo('aJfPDZdXoms')"><img src="https://img.youtube.com/vi/aJfPDZdXoms/hqdefault.jpg"></div>
+<div class="video" onclick="openVideo('ZnKf1uWPujE')"><img src="https://img.youtube.com/vi/ZnKf1uWPujE/hqdefault.jpg"></div>
+<div class="video" onclick="openVideo('v7w_H5KXl54')"><img src="https://img.youtube.com/vi/v7w_H5KXl54/hqdefault.jpg"></div>
+<div class="video" onclick="openVideo('yUNq2c2mWD8')"><img src="https://img.youtube.com/vi/yUNq2c2mWD8/hqdefault.jpg"></div>
+<div class="video" onclick="openVideo('O8uhBS9eKG8')"><img src="https://img.youtube.com/vi/O8uhBS9eKG8/hqdefault.jpg"></div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+<!-- MODAL -->
+<div id="videoModal" class="modal">
+  <div class="modal-box">
+    <button onclick="closeVideo()">Close</button>
+    <iframe id="videoFrame"></iframe>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
