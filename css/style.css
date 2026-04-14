@@ -264,3 +264,10 @@ button {
     transform: translateX(-100%);
   }
 }
+
+.logo {
+  width: 220px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
