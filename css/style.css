@@ -1,3 +1,10 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* BODY */
 body {
   font-family: Verdana, Arial;
@@ -13,10 +20,12 @@ body {
 }
 
 .nav-inner {
-  width: 1000px;
+  max-width: 1000px;
+  width: 100%;
   margin: auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .links a {
@@ -31,10 +40,12 @@ body {
 
 /* LAYOUT */
 .container {
-  width: 1000px;
+  max-width: 1000px;
+  width: 100%;
   margin: 20px auto;
   display: flex;
   gap: 15px;
+  padding: 0 10px;
 }
 
 .sidebar {
@@ -76,13 +87,11 @@ body {
   gap: 10px;
 }
 
-.video {
-  cursor: pointer;
-}
-
 .video img {
   width: 100%;
+  height: auto;
   border: 2px solid #ff66aa;
+  display: block;
 }
 
 /* SHOW MORE */
@@ -106,9 +115,15 @@ button {
   gap: 10px;
 }
 
+.album img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .album {
   border: 2px dashed #ff66aa;
-  padding: 15px;
+  padding: 10px;
   text-align: center;
   cursor: pointer;
   transition: 0.2s;
@@ -119,9 +134,9 @@ button {
   color: black;
 }
 
-/* 🔥 MODAL FIXED */
+/* MODAL */
 .modal {
-  display: none; /* IMPORTANT */
+  display: none;
   position: fixed;
   inset: 0;
   background: rgba(0,0,0,0.85);
@@ -130,33 +145,26 @@ button {
   align-items: center;
 }
 
-/* MODAL BOX */
 .modal-box {
   background: #0b0b0b;
   border: 2px solid #ff66aa;
   padding: 25px;
-
   width: 400px;
   max-width: 90%;
-
   text-align: center;
-
   box-shadow: 0 0 25px #ff66aa;
   animation: pop 0.2s ease;
 }
 
-/* TITLE */
 #albumTitle {
   margin-bottom: 15px;
   color: #ff99cc;
 }
 
-/* LINKS */
 #albumLinks a {
   display: block;
   margin: 6px 0;
   padding: 6px;
-
   border: 1px solid #ff66aa;
   color: white;
   text-decoration: none;
@@ -167,11 +175,9 @@ button {
   color: black;
 }
 
-/* CLOSE BUTTON */
 .modal-box button {
   margin-bottom: 10px;
   padding: 5px 10px;
-
   border: 1px solid #ff66aa;
   background: black;
   color: white;
@@ -183,7 +189,6 @@ button {
   color: black;
 }
 
-/* ANIMATION */
 @keyframes pop {
   from {
     transform: scale(0.8);
@@ -198,28 +203,23 @@ button {
 /* FOOTER */
 .footer {
   margin-top: 40px;
-  padding: 20px 0;
-
+  padding: 20px 10px;
   background: rgba(0, 0, 0, 0.7);
   border-top: 2px solid #ff66aa;
-
   text-align: center;
 }
 
-/* INNER */
 .footer-inner {
-  width: 1000px;
+  max-width: 1000px;
   margin: auto;
 }
 
-/* TEXT */
 .footer p {
   margin-bottom: 10px;
   color: #ff99cc;
   font-size: 13px;
 }
 
-/* LINKS */
 .footer-links a {
   margin: 0 10px;
   color: white;
@@ -231,99 +231,73 @@ button {
   color: #ff66aa;
 }
 
-/* MARQUEE BAR */
+/* MARQUEE */
 .marquee-bar {
   width: 100%;
   overflow: hidden;
-
   background: linear-gradient(90deg, #000, #ff66aa, #000);
   border-top: 2px solid #ff66aa;
   border-bottom: 2px solid #ff66aa;
-
   padding: 6px 0;
 }
 
-/* TEXT TRACK */
 .marquee-track {
   display: inline-block;
   white-space: nowrap;
-
-  color: #fff;
   font-weight: bold;
   font-size: 13px;
-
   animation: scroll 25s linear infinite;
 }
 
-/* ANIMATION */
 @keyframes scroll {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); }
 }
 
+/* LOGO */
 .logo {
   width: 220px;
   height: auto;
   display: block;
   margin: 0 auto;
+  filter: drop-shadow(0 0 10px #ff66aa);
 }
 
-/* 🔥 MOBILE FIX */
+/* 🔥 MOBILE */
 @media (max-width: 900px) {
 
-  /* container becomes vertical */
   .container {
-    width: 100%;
     flex-direction: column;
-    padding: 10px;
   }
 
-  /* sidebar full width */
   .sidebar {
     width: 100%;
   }
 
-  /* content full width */
   .content {
     width: 100%;
   }
 
-  /* videos = 1 per row */
   .videos {
     grid-template-columns: 1fr;
   }
 
-  /* albums = 1 per row */
   .album-list {
     grid-template-columns: 1fr;
   }
 
-  /* logo smaller */
   .logo {
     width: 180px;
   }
 
-  /* nav wrap */
   .nav-inner {
-    width: 100%;
     flex-direction: column;
     gap: 5px;
-    align-items: center;
   }
 
   .links {
     display: flex;
-    gap: 10px;
     flex-wrap: wrap;
     justify-content: center;
-  }
-
-  /* panels spacing */
-  .panel {
-    margin-bottom: 10px;
   }
 }
