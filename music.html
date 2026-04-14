@@ -1,67 +1,83 @@
 <!doctype html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>The To! - Music</title>
+  <head>
+    <meta charset="UTF-8" />
+    <title>The To! - Music</title>
 
-<link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
+  <body>
+    <header>
+      <div class="nav">
+        <div class="nav-inner">
+          <div>The To!</div>
+          <div class="links">
+            <a href="index.html">Home</a>
+            <a href="videos.html">Videos</a>
+            <a href="music.html">Music</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="content">
+          <div class="panel">
+            <h2>Discography</h2>
 
-<div class="nav">
-  <div class="nav-inner">
-    <div>The To!</div>
-    <div class="links">
-      <a href="index.html">Home</a>
-      <a href="videos.html">Videos</a>
-      <a href="music.html">Music</a>
-    </div>
+            <div class="album-list">
+              <div class="album" onclick="openAlbum('lucid2021')">
+                <img
+                  src="img/Lucid_dream.jpg"
+                  alt="LD"
+                  width="200"
+                  height="200"
+                />
+                <p>Lucid Dream 2021</p>
+              </div>
+
+              <div class="album" onclick="openAlbum('ep2011')">
+                <img src="img/1ep.jpg" alt="1ep" width="200" height="200" />
+                <p>I EP (Remastered) 2011</p>
+              </div>
+
+              <!-- TEMPLATE
+  <div class="album" onclick="openAlbum('newAlbum')">
+  Album Name
   </div>
-</div>
+  -->
+            </div>
+          </div>
+        </div>
+      </div>
 
-<div class="container">
+      <!-- ALBUM MODAL -->
+      <div id="albumModal" class="modal">
+        <div class="modal-box">
+          <button onclick="closeAlbum()">Close</button>
+          <h2 id="albumTitle"></h2>
+          <div id="albumLinks"></div>
+        </div>
+      </div>
+    </main>
 
-<div class="content">
+    <footer class="footer">
+      <div class="footer-inner">
+        <p>© The To! — All rights reserved</p>
 
-<div class="panel">
-<h2>Discography</h2>
+        <div class="footer-links">
+          <a href="https://www.instagram.com/magic_punk/" target="_blank"
+            >Instagram</a
+          >
+          <a href="https://www.youtube.com/@TheToooo" target="_blank"
+            >YouTube</a
+          >
+        </div>
+      </div>
+    </footer>
 
-<div class="album-list">
-
-<div class="album" onclick="openAlbum('lucid2021')"> <img src="img/Lucid_dream.jpg" alt="LD" width="200" height="200"> 
-<p>Lucid Dream 2021</p>
-</div>
-
-<div class="album" onclick="openAlbum('ep2011')"> <img src="img/1ep.jpg" alt="1ep" width="200" height="200">
-<p>I EP (Remastered) 2011</p>
-</div>
-
-<!-- TEMPLATE
-<div class="album" onclick="openAlbum('newAlbum')">
-Album Name
-</div>
--->
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- ALBUM MODAL -->
-<div id="albumModal" class="modal">
-  <div class="modal-box">
-    <button onclick="closeAlbum()">Close</button>
-    <h2 id="albumTitle"></h2>
-    <div id="albumLinks"></div>
-  </div>
-</div>
-
-<script src="js/script.js"></script>
-
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>
