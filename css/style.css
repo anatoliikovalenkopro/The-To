@@ -271,3 +271,59 @@ button {
   display: block;
   margin: 0 auto;
 }
+
+/* 🔥 MOBILE FIX */
+@media (max-width: 900px) {
+
+  /* container becomes vertical */
+  .container {
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  /* sidebar full width */
+  .sidebar {
+    width: 100%;
+  }
+
+  /* content full width */
+  .content {
+    width: 100%;
+  }
+
+  /* videos = 1 per row */
+  .videos {
+    grid-template-columns: 1fr;
+  }
+
+  /* albums = 1 per row */
+  .album-list {
+    grid-template-columns: 1fr;
+  }
+
+  /* logo smaller */
+  .logo {
+    width: 180px;
+  }
+
+  /* nav wrap */
+  .nav-inner {
+    width: 100%;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* panels spacing */
+  .panel {
+    margin-bottom: 10px;
+  }
+}
