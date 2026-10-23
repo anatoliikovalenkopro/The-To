@@ -9,6 +9,14 @@ import poltiotDzhmelia from "../assets/poltiot-dzhmelia-2012.webp";
 
 export const marquee = ["THE TO!", "SOLD OUT", "ADD US OR CRY", "FOLLOW"];
 
+// Popup shown when someone opens the site (once per visit). Point albumId at
+// any album below to promote it, or set it to null to turn the popup off.
+export const promo = {
+  albumId: "magicpunk2015",
+  badges: ["OUT NOW", "REMASTERED"],
+  tagline: "On all platforms",
+};
+
 export const contact = [
   { name: "Add Friend", url: "https://www.instagram.com/magic_punk/" },
   { name: "Message", url: "https://www.instagram.com/magic_punk/" },
