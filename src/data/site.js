@@ -3,6 +3,9 @@
 
 import lucidDream from "../assets/lucid-dream-2021.webp";
 import ep2011 from "../assets/ep-2011.webp";
+import magicPunk from "../assets/magic-punk-2015.webp";
+import subRosa from "../assets/sub-rosa-2014.webp";
+import poltiotDzhmelia from "../assets/poltiot-dzhmelia-2012.webp";
 
 export const marquee = ["THE TO!", "SOLD OUT", "ADD US OR CRY", "FOLLOW"];
 
@@ -58,16 +61,61 @@ export const albums = [
     ],
   },
   {
+    id: "magicpunk2015",
+    title: "Magic Punk",
+    year: 2015,
+    cover: magicPunk,
+    links: [
+      { name: "Spotify", url: "https://open.spotify.com/album/7g9zj409r0Mv5IfK0Os8eI" },
+      { name: "Apple Music", url: "https://music.apple.com/us/album/magic-punk/6806087158" },
+      { name: "Bandcamp", url: "https://thetoooo.bandcamp.com/album/magic-punk-remastered" },
+      { name: "SoundCloud", url: "https://soundcloud.com/thetoooo/sets/magic-punk-remastered-2015" },
+      { name: "YouTube Music", url: "https://music.youtube.com/playlist?list=OLAK5uy_nkQdWlYz2jZ7x7Mgs8apVI4y_Eskp2Tn8" },
+      { name: "Deezer", url: "https://www.deezer.com/album/1064691781" },
+      { name: "Tidal", url: "https://tidal.com/album/556201242" },
+    ],
+  },
+  {
+    id: "subrosa2014",
+    title: "Sub Rosa (Remastered)",
+    year: 2014,
+    cover: subRosa,
+    links: [
+      { name: "Spotify", url: "https://open.spotify.com/album/2qDwxNNG1oumGkEmnfIIKH" },
+      { name: "Apple Music", url: "https://music.apple.com/us/album/sub-rosa-ep/6787522311" },
+      { name: "Bandcamp", url: "https://thetoooo.bandcamp.com/album/sub-rosa-remastered" },
+      { name: "SoundCloud", url: "https://soundcloud.com/thetoooo/sets/sub-rosa-remastered-2014" },
+      { name: "YouTube Music", url: "https://music.youtube.com/playlist?list=OLAK5uy_l0SxXPywnmSXJHAAr4ONhBOYNzFumzw44" },
+      { name: "Deezer", url: "https://www.deezer.com/album/1021141571" },
+      { name: "Tidal", url: "https://tidal.com/album/539988963" },
+    ],
+  },
+  {
+    id: "poltiot2012",
+    title: "Польот Джмеля (Remastered)",
+    year: 2012,
+    cover: poltiotDzhmelia,
+    links: [
+      { name: "Spotify", url: "https://open.spotify.com/album/5SZNAPcQK8toIBDOKYmuW7" },
+      { name: "Apple Music", url: "https://music.apple.com/us/album/6768008213" },
+      { name: "Bandcamp", url: "https://thetoooo.bandcamp.com/album/remastered" },
+      { name: "SoundCloud", url: "https://soundcloud.com/thetoooo/sets/polot-dzhmelya-remastered" },
+      { name: "YouTube Music", url: "https://music.youtube.com/playlist?list=OLAK5uy_mQdn5cuQwh2_UafV9oYecF2l51i-ky77c" },
+      { name: "Deezer", url: "https://www.deezer.com/album/978428851" },
+      { name: "Tidal", url: "https://tidal.com/album/522706088" },
+    ],
+  },
+  {
     id: "ep2011",
     title: "I EP (Remastered)",
     year: 2011,
     cover: ep2011,
     links: [
-      { name: "Apple Music", url: "https://music.apple.com/us/album/i-ep/1892302087" },
       { name: "Spotify", url: "https://open.spotify.com/album/2i4xbYxUX6IJfPGJgooVi8" },
-      { name: "YouTube Music", url: "https://music.youtube.com/playlist?list=OLAK5uy_mSKLHOC_AHtNPNSXmPQbtpCT9D1PZs_R0" },
-      { name: "SoundCloud", url: "https://soundcloud.com/thetoooo/sets/i2566" },
+      { name: "Apple Music", url: "https://music.apple.com/us/album/i-ep/1892302087" },
       { name: "Bandcamp", url: "https://thetoooo.bandcamp.com/album/i-remastered" },
+      { name: "SoundCloud", url: "https://soundcloud.com/thetoooo/sets/i2566" },
+      { name: "YouTube Music", url: "https://music.youtube.com/playlist?list=OLAK5uy_mSKLHOC_AHtNPNSXmPQbtpCT9D1PZs_R0" },
       { name: "Deezer", url: "https://www.deezer.com/en/album/957888821" },
       { name: "Tidal", url: "https://tidal.com/album/514524535" },
     ],
