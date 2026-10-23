@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 import { footerLinks, marquee } from "../data/site.js";
 import ExternalLink from "./ExternalLink.jsx";
+import PromoPopup from "./PromoPopup.jsx";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -53,6 +54,8 @@ export default function Layout() {
           ))}
         </div>
       </footer>
+
+      <PromoPopup />
     </>
   );
 }
