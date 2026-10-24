@@ -1,7 +1,7 @@
 # The To! — website
 
 **Website for music Artist**
-https://anatoliikovalenkopro.github.io/The-To/
+https://thetomusic.com
 
 React + Vite single-page site. Pages: Home, Videos, Music.
 
@@ -26,8 +26,9 @@ Everything is in [`src/data/site.js`](src/data/site.js):
 ### GitHub Pages (current)
 
 Every push to `main` runs [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml),
-which builds the site for `/The-To/` and publishes it.
-One-time setup: repo **Settings → Pages → Source: GitHub Actions**.
+which builds the site and publishes it to https://thetomusic.com.
+Setup: repo **Settings → Pages → Source: GitHub Actions**, custom domain `thetomusic.com`,
+DNS at Squarespace (A records to GitHub Pages, `www` CNAME to `anatoliikovalenkopro.github.io`).
 
 ### Vercel (alternative)
 

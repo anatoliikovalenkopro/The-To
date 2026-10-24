@@ -25,11 +25,13 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
-        env:
-          BASE_PATH: /${{ github.event.repository.name }}/
-      # Pages has no SPA rewrites: serving index.html as the 404 page makes
-      # /The-To/music etc. work on refresh.
-      - run: cp dist/index.html dist/404.html
+      # Pages has no SPA rewrites. Give each route its own index.html so
+      # /music and /videos return 200; 404.html catches anything else.
+      - run: |
+          for route in music videos; do
+            mkdir -p dist/$route && cp dist/index.html dist/$route/index.html
+          done
+          cp dist/index.html dist/404.html
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
